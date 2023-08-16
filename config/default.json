@@ -1,0 +1,10 @@
+{
+    "db-connections":{
+        "mongodb": {
+            "host": "cluster0.5hu05r6.mongodb.net",
+            "user":"rest_api_user",
+            "password": "DgYWfmHxAWHTL2we",
+            "dbname":"AcademicDB"
+        }
+    }
+}
