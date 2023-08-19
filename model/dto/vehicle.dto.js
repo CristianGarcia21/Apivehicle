@@ -1,10 +1,11 @@
 /** packages */
 const mongoose = require("mongoose");
+const db = require("../db-connection/mongodb");
 
 /** using schema */
 
 const schema = require("../schemas/vehicle.schema");
-
+db();
 schema.statics = {
     create: function (data, cb) {
         let doc = new this(data);
@@ -12,11 +13,11 @@ schema.statics = {
     },
 
     getAll: function (query, cb) {
-        doc.find(query, cb);
+        this.find(query, cb);
     },
 
     getBySerial: function (query , cb){
-        doc.find(query,cb);
+        this.find(query,cb);
     },
 
     update: function( query, data , cb){

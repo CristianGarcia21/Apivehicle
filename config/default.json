@@ -6,5 +6,9 @@
             "password": "DgYWfmHxAWHTL2we",
             "dbname":"AcademicDB"
         }
-    }
+    },
+    "secretkeys": {
+        "cryptojs": "9G$X7?fW4<"
+    },
+    "server-port": 3000
 }
